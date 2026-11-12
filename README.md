@@ -7,7 +7,9 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/
 Series anuales sobre Criminalidad 
 https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.html?type=jaxi&title=Cibercriminalidad&path=/Datos5/
 
-## PORTAL ESTADÍSTICO DE CRIMINALIDAD
+## Origen de los datos: 
+### PORTAL ESTADÍSTICO DE CRIMINALIDAD 
+
     * Series anuales. Cibercriminalidad. Comunidades y Ciudades Autónomas
         * Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por grupo penal
         * Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por tipo hecho
@@ -32,3 +34,10 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.ht
         * Victimizaciones de infracciones penales relacionadas con cibercriminalidad desglosado por tipo hecho
         * Victimizaciones de infracciones penales relacionadas con cibercriminalidad desglosado por nacionalidad 2011-2020
         * Victimizaciones de infracciones penales relacionadas con cibercriminalidad desglosado por nacionalidad 2021-2025 
+
+
+## Hipótesis: 
+
+1. Evolución de la ciberdelincuencia por (tipo de delito) grupo penal
+2. CCAA con mayor número de ciberdelitos (hechos conocidos)
+3. 
