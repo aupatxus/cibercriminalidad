@@ -41,4 +41,4 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.ht
 1. Evolución de la ciberdelincuencia por tipo de delito (por grupo penal)
 2. CCAA con mayor número de ciberdelitos (hechos conocidos)
 3. El top 10 de la tipología penal (por tipo de hecho)
-4. 
+4. Tasa de esclarecimiento por año, por grupo penal y por CCAA
