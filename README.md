@@ -99,7 +99,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 ## Hipótesis en desarrollo y conclusiones previas
 
-1. Evolución temporal de la ciberdelincuencia por tipo de delito (por grupo penal)
+### 1. Evolución temporal de la ciberdelincuencia por tipo de delito (por grupo penal)
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h1.png">
 
 * Los ciberdelitos conocidos pasaron de 37.412 en 2011 a 488.426 en 2025 (multiplicándose por más de 13).  
@@ -108,21 +108,21 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 <hr>
 
-2. Distribución por CCAA: Los lugares con mayor número de ciberdelitos (hechos conocidos)
+### 2. Distribución por CCAA: Los lugares con mayor número de ciberdelitos (hechos conocidos)
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h2.png">  
 
 * Tres comunidades concentran casi la mitad de todos los hechos conocidos: Cataluña (535.646), Andalucía (513.138) y Comunidad de Madrid (507.804).
 
 <hr>
 
-3. El top 10 de la tipología penal (por tipo de hecho)
+### 3. El top 10 de la tipología penal (por tipo de hecho)
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3.png">
 
 * Dentro de los fraudes, destacan las estafas con tarjetas de crédito/débito (1.177.949), otras estafas (1.060.872) y estafa bancaria (400.067).
 
 <hr>
 
-4. Datos conocidos vs. Datos esclarecidos: Tasa de esclarecimiento por año, por grupo penal y por CCAA de infracciones penales relacionadas con cibercriminalidad. 
+### 4. Datos conocidos vs. Datos esclarecidos: Tasa de esclarecimiento por año, por grupo penal y por CCAA de infracciones penales relacionadas con cibercriminalidad. 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h4_1.png">  
 
 * Mientras los casos conocidos se disparaban, la tasa nacional de esclarecimiento cayó del 36% en 2011 al 15% en 2025 (tocando suelo en el 13% en 2020 y 2023). Visualmente vemos cómo sube la barra de delitos mientras cae la línea naranja de casos resueltos.
@@ -147,7 +147,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 <hr>
 
-5. Victimizaciones: ¿Qué colectivos son los más (vulnerables) atacados por la ciberdelincuencia?) Víctimas por sexo, por grupo de edad y por tipología delictiva.
+### 5. Victimizaciones: ¿Qué colectivos son los más (vulnerables) atacados por la ciberdelincuencia?) Víctimas por sexo, por grupo de edad y por tipología delictiva.
 
 
 
