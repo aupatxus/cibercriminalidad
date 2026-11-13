@@ -125,14 +125,17 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 <hr>
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h4_2.png">
-   * Por tipo de delito, los Delitos Sexuales y contra la Propiedad Industrial/Intelectual tienen un 63% de esclarecimiento, seguidos de cerca por las Amenazas y Coacciones y los delitos Contra el Honor, ambos con un 57%, mientras que el Fraude Informático apenas  logra esclarecerse el 12%, y peor aún es el escenario en Interferencia en los datos y en el sistema (ataques informáticos, sabotajes), donde la resolución cae al 6%.
+   * Por tipo de delito, los Delitos Sexuales y contra la Propiedad Industrial/Intelectual tienen un 63% de esclarecimiento, seguidos de cerca por las Amenazas y Coacciones y los delitos Contra el Honor, ambos con un 57%, mientras que el Fraude Informático apenas  logra esclarecerse el 12%, y peor aún es el escenario en Interferencia en los datos y en el sistema (ataques informáticos, sabotajes), donde la resolución cae al 6%.  
+   
       * Podemos interpretar que los delitos contra las personas suelen dejar rastros directos en redes sociales o mensajería vinculados a entornos cercanos a la víctima, facilitando su investigación. En cambio, las estafas masivas y ciberataques operan mediante redes automatizadas, suplantación de identidad y servidores internacionales, lo que dificulta enormemente identificar al autor.
 
 <hr>
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h4_3.png">
-   * Hay un contraste territorial llamativo: Las regiones que concentran el mayor volumen absoluto de denuncias en España son las que presentan menores porcentajes de resolución. Mientras territorios con menor volumen como Melilla (32%), Extremadura (25%) o Castilla-La Mancha (24%) superan holgadamente la media nacional, grandes núcleos urbanos como Madrid (13%), Cataluña (8%) y País Vasco (2%) se sitúan a la cola.
-      * (nota: en el caso de País Vasco y Cataluña debemos tener en cuenta que el reporte de (Ertzaintza y Mossos d'Esquadra) policías autonómicas se dió a partir de 2015, frente a los datos de FCSE (Policía Nacional y Guardia Civil) que disponemos desde 2011).
+   * Hay un contraste territorial llamativo: Las regiones que concentran el mayor volumen absoluto de denuncias en España son las que presentan menores porcentajes de resolución. Mientras territorios con menor volumen como Melilla (32%), Extremadura (25%) o Castilla-La Mancha (24%) superan holgadamente la media nacional, grandes núcleos urbanos como Madrid (13%), Cataluña (8%) y País Vasco (2%) se sitúan a la cola.  
+   
+      * (nota: en el caso de País Vasco y Cataluña debemos tener en cuenta que el reporte de (Ertzaintza y Mossos d'Esquadra) policías autonómicas se dió a partir de 2015, frente a los datos de FCSE (Policía Nacional y Guardia Civil) que disponemos desde 2011).  
+      
       * Podemos interpretar que en comunidades con una altísima densidad de denuncias digitales (como Madrid, con más de 500.000 hechos conocidos), el volumen masivo de estafas cotidianas satura la capacidad de investigación frente a regiones con menor carga de casos.
 
 <hr>
