@@ -78,11 +78,11 @@ https://github.com/aupatxus/cibercriminalidad/
 │
 │
 ├── src/
-│   ├── data/          archivos y datasets.csv
+│   ├── data/          datasets.csv
 │   │
-│   ├── notebooks/     estudio y pruebas.ipynb
+│   ├── notebooks/     estudios y pruebas.ipynb
 │   │
-│   ├── utils/         generando los datasets.ipynb
+│   ├── utils/         generando datasets propios y gráficos.ipynb
 │   │
 │   └── memoria.ipynb
 │
