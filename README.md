@@ -62,15 +62,6 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.ht
 
 
 
-## Hipótesis desarrolladas 
-
-1. Evolución de la ciberdelincuencia por tipo de delito (por grupo penal)
-2. CCAA con mayor número de ciberdelitos (hechos conocidos)
-3. El top 10 de la tipología penal (por tipo de hecho)
-4. Datos conocidos vs. Datos esclarecidos: Tasa de esclarecimiento por año, por grupo penal y por CCAA de infracciones penales relacionadas con cibercriminalidad. 
-5. Victimizaciones: ¿Qué colectivos son los más (vulnerables) atacados por la ciberdelincuencia?) Víctimas por sexo, por grupo de edad y por tipología delictiva.
-
-
 ## Estructura del repositorio:
 
 ```
@@ -89,4 +80,27 @@ https://github.com/aupatxus/cibercriminalidad/
 └── README.md
 ```
 
+## Limpieza y transformación de los datos de (origen) entrada
 
+* `pandas`: importar, limpiar y transformar los datos.
+* `numpy`: cálculos estadísticos.
+* `matplotlib` y `seaborn`: visualizaciones.
+* `plotly`: gráficos interactivos y mapas.
+
+
+
+> La columna "Total" contiene datos numéricos con el formato de . para separar por miles, lo que genera un problema a la hora de importar los datos del csv ya que los interpreta como valores float en lugar de numéricos de tipo integer (int) o entero sin decimales. Para prevenir estos futuros errores procesando los datos totales se emplea el parámetro `thousands="."` para importar correctamente la columna de totales con el comando `pd.read_csv(../data/archivo.csv", sep=";", thousands=".")`
+
+
+````
+df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
+````
+
+
+## Hipótesis desarrolladas 
+
+1. Evolución de la ciberdelincuencia por tipo de delito (por grupo penal)
+2. CCAA con mayor número de ciberdelitos (hechos conocidos)
+3. El top 10 de la tipología penal (por tipo de hecho)
+4. Datos conocidos vs. Datos esclarecidos: Tasa de esclarecimiento por año, por grupo penal y por CCAA de infracciones penales relacionadas con cibercriminalidad. 
+5. Victimizaciones: ¿Qué colectivos son los más (vulnerables) atacados por la ciberdelincuencia?) Víctimas por sexo, por grupo de edad y por tipología delictiva.
