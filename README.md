@@ -97,10 +97,24 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 ````
 
 
-## Hipótesis desarrolladas 
+## Hipótesis en desarrollo y conclusiones previas
 
-1. Evolución de la ciberdelincuencia por tipo de delito (por grupo penal)
-2. CCAA con mayor número de ciberdelitos (hechos conocidos)
+1. Evolución temporal de la ciberdelincuencia por tipo de delito (por grupo penal)
+   * Los ciberdelitos conocidos pasaron de 37.412 en 2011 a 488.426 en 2025 (multiplicándose por más de 13).
+   * El Fraude Informático acumula 2.794.739 casos en todo el periodo, representando la inmensa mayoría de la ciberdelincuencia en España.
+     
+2. Distribución por CCAA: Los lugares con mayor número de ciberdelitos (hechos conocidos)
+   * Tres comunidades concentran casi la mitad de todos los hechos conocidos: Cataluña (535.646), Andalucía (513.138) y Comunidad de Madrid (507.804).
+
 3. El top 10 de la tipología penal (por tipo de hecho)
+   * Dentro de los fraudes, destacan las estafas con tarjetas de crédito/débito (1.177.949), otras estafas (1.060.872) y estafa bancaria (400.067).
+     
 4. Datos conocidos vs. Datos esclarecidos: Tasa de esclarecimiento por año, por grupo penal y por CCAA de infracciones penales relacionadas con cibercriminalidad. 
+   * Mientras los casos conocidos se disparaban, la tasa nacional de esclarecimiento cayó del 36% en 2011 al 15% en 2025 (tocando suelo en el 13% en 2020 y 2023).
+   
 5. Victimizaciones: ¿Qué colectivos son los más (vulnerables) atacados por la ciberdelincuencia?) Víctimas por sexo, por grupo de edad y por tipología delictiva.
+
+
+
+
+
