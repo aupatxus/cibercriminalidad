@@ -168,7 +168,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h5_2.png">
 
-* Según la tipología de delitos, la mayoría masculina es víctima en fraudes; y la mayoría femenina es víctima de Delitos Sexuales con 63% y Amenazas y Coacciones con 57%.
+* Según la tipología de delitos, la mayoría hombres es víctima en ciberdelitos contra la propiedad industrial/intelectual con el 66% de los casos ; y la mayoría de mujeres es víctima de Delitos Sexuales con el 66% de los casos.
 
 
 
