@@ -109,7 +109,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 * Los ciberdelitos conocidos pasaron de 37.412 en 2011 a 488.426 en 2025 (multiplicándose por más de 13).  
      
-* El Fraude Informático acumula 2.794.739 casos en todo el periodo, representando la inmensa mayoría de la ciberdelincuencia en España.  
+* El Fraude Informático acumula 2.794.739 casos en todo el periodo, representando la mayoría de la ciberdelincuencia.  
 
 <hr>
 
@@ -118,7 +118,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h2.png">  
 
-* Tres comunidades concentran casi la mitad de todos los hechos conocidos: Cataluña (535.646), Andalucía (513.138) y Comunidad de Madrid (507.804).
+* Tres comunidades concentran casi la mitad de todos los hechos conocidos: 19.3% Cataluña (535.646 casos), 18.5% Andalucía (513.138 casos) y 18.3% Comunidad de Madrid (507.804 casos).
 
 <hr>
 
@@ -127,7 +127,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3.png">
 
-* Dentro de los fraudes, destacan las estafas con tarjetas de crédito/débito (1.177.949), otras estafas (1.060.872) y estafa bancaria (400.067).
+* Dentro de los fraudes, destacan las estafas con tarjetas de crédito/débito (1.177.949 casos), otras estafas (1.060.872 casos) y estafa bancaria (400.067 casos).
 
 <hr>
 
@@ -138,11 +138,12 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 * Mientras los casos conocidos se disparaban, la tasa nacional de esclarecimiento cayó del 36% en 2011 al 15% en 2025 (tocando suelo en el 13% en 2020 y 2023). Visualmente vemos cómo sube la barra de delitos mientras cae la línea naranja de casos resueltos.
 
+
 <hr>
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h4_2.png">  
 
-* Por tipo de delito, los Delitos Sexuales y contra la Propiedad Industrial/Intelectual tienen un 63% de esclarecimiento, seguidos de cerca por las Amenazas y Coacciones y los delitos Contra el Honor, ambos con un 57%, mientras que el Fraude Informático apenas  logra esclarecerse el 12%, y peor aún es el escenario en Interferencia en los datos y en el sistema (ataques informáticos, sabotajes), donde la resolución cae al 6%.  
+* Por tipo de delito, los Delitos Sexuales y contra la Propiedad Industrial/Intelectual tienen un 63% de esclarecimiento, seguidos de cerca por las Amenazas y Coacciones y los delitos Contra el Honor, ambos con un 57%, mientras que el Fraude Informático apenas logra resolverse el 12% de los casos, y peor aún es el escenario en Interferencia en los datos y en el sistema (ataques informáticos, sabotajes), donde la resolución de los casos cae al 6%.  
    
 * Podemos interpretar que los delitos contra las personas suelen dejar rastros directos en redes sociales o mensajería vinculados a entornos cercanos a la víctima, facilitando su investigación. En cambio, las estafas masivas y ciberataques operan mediante redes automatizadas, suplantación de identidad y servidores internacionales, lo que dificulta enormemente identificar al autor.
 
@@ -158,10 +159,16 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 <hr>
 
 ### 5. Victimizaciones: ¿Qué colectivos son los más (vulnerables) atacados por la ciberdelincuencia?) Víctimas por sexo, por grupo de edad y por tipología delictiva.  
-> ¿Quiénes son las víctimas?
-<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h5_1.png">  
+> ¿Quiénes son las víctimas? ¿Cual es el perfil de las víctimas?
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h5_1.png">
 
-<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h5_2.png">  
+* Según el Sexo de las víctimas respecto a los datos totales acumulados de 2011 a 2025, el 52% son víctimas masculinas y 48% son víctimas femeninas.
+
+* Según la edad de las víctimas, la mayoría se concentra en adultos jóvenes y población activa (26-40 años con el 29%, 41-50 años con el 23% y 51-65 años con el 23%), mientras que los mayores de 65 años representan el 9% y los menores el 2%.
+
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h5_2.png">
+
+* Según la tipología de delitos, la mayoría masculina es víctima en fraudes; y la mayoría femenina es víctima de Delitos Sexuales con 63% y Amenazas y Coacciones con 57%.
 
 
 
