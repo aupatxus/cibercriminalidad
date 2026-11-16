@@ -111,6 +111,17 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
      
 * El Fraude Informático acumula 2.794.739 casos en todo el periodo, representando la mayoría de la ciberdelincuencia.  
 
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h1_2.png">
+
+* El período con más ciberdelitos fue el año 2025 con 1953704 casos nuevos.  
+* El mayor incremento absoluto fue el año 2023 con 390092 casos.  
+* El mayor incremento porcentual fue el año 2015 con el 66 %.  
+* Años con disminución de ciberdelitos:  
+   * El Año 2013 bajó en 1636 casos.  
+   * El Año 2024 bajó en 29836 casos.  
+
+
+
 <hr>
 
 ### 2. Distribución por CCAA: Los lugares con mayor número de ciberdelitos (hechos conocidos)  
