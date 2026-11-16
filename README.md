@@ -140,6 +140,14 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 * Dentro de los fraudes, destacan las estafas con tarjetas de crédito/débito (1.177.949 casos), otras estafas (1.060.872 casos) y estafa bancaria (400.067 casos).
 
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3_2.png">
+* Del total de 54 tipologías penales, 45 de ellas presentan una evolucion creciente.  
+
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3_3.png">
+* Del total de 54 tipologías penales, 7 de ellas presentan una evolucion decreciente.  
+
+
+
 <hr>
 
 ### 4. Datos conocidos vs. Datos esclarecidos: Tasa de esclarecimiento por año, por grupo penal y por CCAA de infracciones penales relacionadas con cibercriminalidad. 
