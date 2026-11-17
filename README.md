@@ -67,19 +67,18 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.ht
 ```
 https://github.com/aupatxus/cibercriminalidad/
 │
-│
 ├── src/
 │   ├── data/          datasets.csv de origen y datasets generados 
 │   │
-│   ├── notebooks/     estudios previos y pruebas.ipynb
+│   ├── notebooks/     pruebas.ipynb y estudios previos
 │   │
-│   ├── utils/         notebooks para generar datasets de resultados y gráficos.ipynb
+│   ├── utils/         notebooks.ipynb para generar datasets de resultados y gráficos
 │   │
 │   └── scripts/       scripts.py 
 │   │
 │   └── png/           gráficas.png generadas desde los scripts
-│   │
-│   └── presentación/  presentación.pdf
+│
+└── presentación.pdf
 │
 └── README.md
 ```
