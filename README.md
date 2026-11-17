@@ -69,13 +69,17 @@ https://github.com/aupatxus/cibercriminalidad/
 │
 │
 ├── src/
-│   ├── data/          datasets.csv
+│   ├── data/          datasets.csv de origen y datasets generados 
 │   │
-│   ├── notebooks/     estudios y pruebas.ipynb
+│   ├── notebooks/     estudios previos y pruebas.ipynb
 │   │
-│   ├── utils/         generando datasets propios y gráficos.ipynb
+│   ├── utils/         notebooks para generar datasets de resultados y gráficos.ipynb
 │   │
-│   └── memoria.ipynb
+│   └── scripts/       scripts.py 
+│   │
+│   └── png/           gráficas.png generadas desde los scripts
+│   │
+│   └── presentación/  presentación.pdf
 │
 └── README.md
 ```
