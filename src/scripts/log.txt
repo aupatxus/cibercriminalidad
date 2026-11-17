@@ -1,0 +1,255 @@
+
+
+
+Análisis de la evolución de los ciberdelitos y situación de la cibercriminalidad
+================================================================================
+
+
+Procesando la hipótesis 1
+-------------------------
+
+Procesando el csv: ../data/05001 (Comunidades) Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por grupo penal.csv
+
+Se ha generado el dataset 1: ../data/dataset1_evolucion_ciberdelincuencia.csv
+Grupo penal
+FRAUDE INFORMÁTICO                            2794739
+AMENAZAS Y COACCIONES                          198477
+FALSIFICACIÓN INFORMÁTICA                      109272
+ACCESO  E INTERCEPTACIÓN ILÍCITA                69989
+CONTRA EL HONOR                                 23831
+DELITOS SEXUALES                                21064
+INTERFERENCIA EN LOS DATOS Y EN EL SISTEMA      18621
+CONTRA LA PROPIEDAD INDUSTRIAL/INTELECTUAL       2437
+Name: Total, dtype: int64
+
+Se ha generado el gráfico: ../png/h1_1.png
+Evolución de la cibercriminalidad por grupo penal
+
+El período con más ciberdelitos fue el año: 2025 con: 1953704 casos.
+Mayor incremento absoluto: El año 2023 con 390092 casos
+Mayor incremento porcentual: El año 2015 con el 66 %
+Años con disminución de ciberdelitos:
+Año 2013 : Bajó en 1636 casos.
+Año 2024 : Bajó en 29836 casos.
+
+Se ha generado el gráfico: ../png/h1_2.png
+Incremento absoluto anual y porcentual de nuevos casos de la Cibercriminalidad (2011-2025)
+
+
+Procesando la hipótesis 2
+-------------------------
+
+Procesando el csv: ../data/05001 (Comunidades) Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por grupo penal.csv
+
+Se ha generado el dataset 2: ../data/dataset2_delitos_por_ccaa.csv
+
+Ranking acumulado de hechos conocidos por Comunidad Autónoma Comunidades autónomas
+CATALUÑA                        535646
+ANDALUCÍA                       513138
+MADRID (COMUNIDAD DE)           507804
+COMUNITAT VALENCIANA            319936
+PAÍS VASCO                      188749
+CASTILLA Y LEÓN                 174714
+GALICIA                         174016
+CASTILLA - LA MANCHA            127817
+CANARIAS                        123856
+BALEARS (ILLES)                  97701
+ARAGÓN                           86196
+MURCIA (REGIÓN DE)               80065
+EN EL EXTRANJERO                 68708
+ASTURIAS (PRINCIPADO DE)         64675
+EXTREMADURA                      57671
+NAVARRA (COMUNIDAD FORAL DE)     50243
+CANTABRIA                        41386
+RIOJA (LA)                       17609
+CIUDAD AUTÓNOMA DE CEUTA          4727
+CIUDAD AUTÓNOMA DE MELILLA        3754
+DESCONOCIDA                         19
+Name: Total, dtype: int64
+
+Se ha generado el gráfico: ../png/h2_1.png
+Ciberdelitos de hechos conocidos por Comunidad Autónoma (Acumulado histórico desde 2011 hasta 2025)
+
+
+Procesando la hipótesis 3
+-------------------------
+
+Procesando el csv: ../data/05003 (Comunidades) Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por tipo hecho.csv
+
+Se ha generado el dataset 3: ../data/dataset3_tipologia_delitos.csv
+
+Ranking acumulado de hechos conocidos por tipología penal Tipología penal
+ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE                                              1177949
+OTRAS ESTAFAS                                                                                           1060872
+ESTAFA BANCARIA                                                                                          400067
+AMENAZAS                                                                                                 157472
+ESTAFAS INFORMÁTICAS                                                                                     148887
+USURPACIÓN DE ESTADO CIVIL                                                                               105783
+DESCUBRIMIENTO/REVELACIÓN DE SECRETOS                                                                     32992
+COACCIONES                                                                                                23202
+ACCESO ILEGAL INFORMÁTICO                                                                                 19826
+INJURIAS                                                                                                  19417
+ACCESO ILEGAL A SISTEMAS INFORMÁTICOS                                                                     12745
+EXTORSIÓN                                                                                                 12556
+ATAQUES INFORMÁTICOS                                                                                      12054
+PORNOGRAFÍA DE MENORES                                                                                     8984
+ESTAFA DE INVERSORES                                                                                       6964
+DELITO DE CONTACTO MEDIANTE TECNOLOGÍA CON MENOR DE 16 AÑOS CON FINES SEXUALES (GROOMING)                  4606
+ACOSO CONTRA LA LIBERTAD DE LAS PERSONAS                                                                   4261
+CALUMNIAS                                                                                                  4072
+SEXTING                                                                                                    3919
+CORRUPCIÓN DE MENORES/CON DISCAPACIDAD/DIVERSIDAD FUNCIONAL                                                2975
+ATAQUES A DATOS O PROGRAMAS INFORMÁTICOS                                                                   2930
+OTRAS FALSIFICACIONES DOCUMENTOS                                                                           2499
+ATAQUES A SISTEMAS INFORMÁTICOS                                                                            2286
+CONTRA LA PROPIEDAD INTELECTUAL                                                                            1444
+ACOSO SEXUAL                                                                                               1418
+DAÑOS                                                                                                      1329
+ABUSO SEXUAL                                                                                               1213
+CONTRA LA PROPIEDAD INDUSTRIAL                                                                              903
+PROVOCACIÓN SEXUAL                                                                                          776
+TRATO DEGRADANTE                                                                                            553
+EXHIBICIONISMO                                                                                              495
+FALSIFICACIÓN/TRÁFICO TARJETAS CRÉDITO Y DÉBITO/CHEQUES VIAJE                                               352
+INJURIAS Y CALUMNIAS A FUNCIONARIO PÚBLICO, AUTORIDAD O SUS AGENTES                                         342
+FALSIFICACIÓN DE MONEDA, SELLOS Y EFECTOS TIMBRADOS                                                         320
+AGRESIÓN SEXUAL                                                                                             316
+PERFILES FALSOS CON FINES ACOSO/HOSTIGAMIENTO/HUMILLACIÓN                                                   315
+DISTRIB/DIFUSIÓN PÚBLICA POR NNTT LA PROMOCIÓN DELITOS VS LA PROSTITUCIÓN Y LIBERTAD SEXUAL MENORES         245
+FALSIFICACIÓN/TRÁFICO DE DNI/PASAPORTE                                                                      235
+OTROS RELATIVOS AL MERCADO/CONSUMIDORES                                                                     209
+FACILITACIÓN DE DISPOSITIVOS, PROGRAMAS O CLAVES PARA ACCEDER ILEGALMENTE A DATOS O SIS INFORMÁTICOS        148
+INTERCEPTACIÓN DE TRANSMISIONES NO PÚBLICAS DE DATOS INFORMÁTICOS                                           137
+AMENAZAS A GRUPO ÉTNICO CULTURAL O RELIGIOSO                                                                 85
+ACCESO FRAUDULENTO A SERVICIOS DE RADIODIFUSIÓN/TV/OTROS                                                     83
+USURPACIÓN DE FUNCIONES PÚBLICAS                                                                             53
+ACOSO LABORAL O FUNCIONARIAL                                                                                 33
+AGRESIÓN SEXUAL CON PENETRACIÓN                                                                              28
+FACILITACIÓN DE DISPOSITIVOS, PROGRAMAS O CLAVES PARA COMETER ATAQUES INFORMÁTICOS                           22
+INTRUSISMO                                                                                                   21
+DESCUBRIMIENTO Y REVELACIÓN DE SECRETOS E INFORMACIONES RELATIVAS A LA DEFENSA NACIONAL                      13
+FABRICACIÓN/TENENCIA DE UTILES PARA FALSIFICAR                                                                9
+DELITO DE ESPIONAJE INDUSTRIAL Y SECRETO PROFESIONAL                                                          7
+DELITOS RELATIVOS A LA PROSTITUCIÓN                                                                           7
+PRODUCCIÓN DE PORNOGRAFÍA DE MENORES                                                                          1
+ABUSO SEXUAL CON PENETRACIÓN                                                                                  0
+Name: Total, dtype: int64
+
+Se ha generado el gráfico: ../png/h3_1.png
+Top 10 tipologías de ciberdelincuencia (Acumulado histórico desde 2011 hasta 2025)
+
+
+Número de tipologías de ciberdelitos en aumento: 45
+
+Número de tipologías de ciberdelitos que disminuyen: 7
+
+Tipologías de ciberdelitos en aumento ['ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE', 'OTRAS ESTAFAS', 'ESTAFAS INFORMÁTICAS', 'ESTAFA BANCARIA', 'USURPACIÓN DE ESTADO CIVIL', 'DESCUBRIMIENTO/REVELACIÓN DE SECRETOS', 'ACCESO ILEGAL A SISTEMAS INFORMÁTICOS', 'ESTAFA DE INVERSORES', 'EXTORSIÓN', 'ACOSO CONTRA LA LIBERTAD DE LAS PERSONAS', 'AMENAZAS', 'SEXTING', 'ATAQUES A DATOS O PROGRAMAS INFORMÁTICOS', 'COACCIONES', 'OTRAS FALSIFICACIONES DOCUMENTOS', 'ATAQUES A SISTEMAS INFORMÁTICOS', 'DELITO DE CONTACTO MEDIANTE TECNOLOGÍA CON MENOR DE 16 AÑOS CON FINES SEXUALES (GROOMING)', 'CORRUPCIÓN DE MENORES/CON DISCAPACIDAD/DIVERSIDAD FUNCIONAL', 'PORNOGRAFÍA DE MENORES', 'TRATO DEGRADANTE', 'CALUMNIAS', 'AGRESIÓN SEXUAL', 'FALSIFICACIÓN/TRÁFICO TARJETAS CRÉDITO Y DÉBITO/CHEQUES VIAJE', 'INJURIAS Y CALUMNIAS A FUNCIONARIO PÚBLICO, AUTORIDAD O SUS AGENTES', 'PERFILES FALSOS CON FINES ACOSO/HOSTIGAMIENTO/HUMILLACIÓN', 'FALSIFICACIÓN/TRÁFICO DE DNI/PASAPORTE', 'DISTRIB/DIFUSIÓN PÚBLICA POR NNTT LA PROMOCIÓN DELITOS VS LA PROSTITUCIÓN Y LIBERTAD SEXUAL MENORES', 'ACOSO SEXUAL', 'FACILITACIÓN DE DISPOSITIVOS, PROGRAMAS O CLAVES PARA ACCEDER ILEGALMENTE A DATOS O SIS INFORMÁTICOS', 'INTERCEPTACIÓN DE TRANSMISIONES NO PÚBLICAS DE DATOS INFORMÁTICOS', 'USURPACIÓN DE FUNCIONES PÚBLICAS', 'EXHIBICIONISMO', 'ACOSO LABORAL O FUNCIONARIAL', 'CONTRA LA PROPIEDAD INDUSTRIAL', 'AGRESIÓN SEXUAL CON PENETRACIÓN', 'INTRUSISMO', 'PROVOCACIÓN SEXUAL', 'FACILITACIÓN DE DISPOSITIVOS, PROGRAMAS O CLAVES PARA COMETER ATAQUES INFORMÁTICOS', 'ACCESO FRAUDULENTO A SERVICIOS DE RADIODIFUSIÓN/TV/OTROS', 'DESCUBRIMIENTO Y REVELACIÓN DE SECRETOS E INFORMACIONES RELATIVAS A LA DEFENSA NACIONAL', 'AMENAZAS A GRUPO ÉTNICO CULTURAL O RELIGIOSO', 'OTROS RELATIVOS AL MERCADO/CONSUMIDORES', 'DELITO DE ESPIONAJE INDUSTRIAL Y SECRETO PROFESIONAL', 'DELITOS RELATIVOS A LA PROSTITUCIÓN', 'PRODUCCIÓN DE PORNOGRAFÍA DE MENORES']
+
+Tipologías de ciberdelitos que disminuyen: ['INJURIAS', 'ACCESO ILEGAL INFORMÁTICO', 'ATAQUES INFORMÁTICOS', 'CONTRA LA PROPIEDAD INTELECTUAL', 'DAÑOS', 'ABUSO SEXUAL', 'FALSIFICACIÓN DE MONEDA, SELLOS Y EFECTOS TIMBRADOS']
+
+Se ha generado el gráfico: ../png/h3_2.png
+Evolución de las tipologías de Ciberdelitos con mayor crecimiento
+
+
+Se ha generado el gráfico: ../png/h3_3.png
+Evolución de las Tipologías de Ciberdelitos que más disminuyeron
+
+
+Procesando la hipótesis 4
+-------------------------
+
+Procesando el csv: ../data/05001 (Comunidades) Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por grupo penal.csv
+
+Procesando el csv: ../data/05005 (Comunidades) Hechos esclarecidos de infracciones penales relacionadas con cibercriminalidad por grupo penal.csv
+
+Se ha generado el dataset 4: ../data/dataset4_hechos_esclarecidos.csv
+
+Tasa de resolución de casos por CCAA
+                              Hechos_Conocidos  Hechos_Esclarecidos  Tasa_Esclarecimiento_%
+Comunidades autónomas
+CIUDAD AUTÓNOMA DE MELILLA                3754                 1200                    32.0
+EXTREMADURA                              57671                14364                    25.0
+CIUDAD AUTÓNOMA DE CEUTA                  4727                 1117                    24.0
+CASTILLA - LA MANCHA                    127817                30145                    24.0
+CANARIAS                                123856                28662                    23.0
+MURCIA (REGIÓN DE)                       80065                18477                    23.0
+ANDALUCÍA                               513138               111114                    22.0
+ASTURIAS (PRINCIPADO DE)                 64675                13913                    22.0
+COMUNITAT VALENCIANA                    319936                68610                    21.0
+DESCONOCIDA                                 19                    4                    21.0
+CASTILLA Y LEÓN                         174714                35475                    20.0
+GALICIA                                 174016                33085                    19.0
+CANTABRIA                                41386                 7545                    18.0
+RIOJA (LA)                               17609                 3017                    17.0
+ARAGÓN                                   86196                14543                    17.0
+NAVARRA (COMUNIDAD FORAL DE)             50243                 7358                    15.0
+BALEARS (ILLES)                          97701                13133                    13.0
+MADRID (COMUNIDAD DE)                   507804                64919                    13.0
+CATALUÑA                                535646                45312                     8.0
+EN EL EXTRANJERO                         68708                 4443                     6.0
+PAÍS VASCO                              188749                 3472                     2.0
+
+Se ha generado el gráfico: ../png/h4_1.png
+Hechos conocidos, esclarecidos y tasa de esclarecimiento de infracciones penales relacionadas con cibercriminalidad
+
+
+Se ha generado el gráfico: ../png/h4_2.png
+Tasa de esclarecimiento por Grupo Penal (Acumulado 2011–2025)
+
+
+Se ha generado el gráfico: ../png/h4_3.png
+Tasa de esclarecimiento por Comunidad Autónoma (Acumulado 2011–2025)
+
+
+Procesando la hipótesis 5
+-------------------------
+
+Procesando el csv: ../data/05015 (Comunidades) Victimizaciones de infracciones penales relacionadas con cibercriminalidad desglosado por grupo penal.csv
+
+Se ha generado el dataset 5: ../data/dataset5_victimizaciones.csv
+
+Víctimas agrupadas por Sexo
+Sexo
+Masculino       1288616
+Femenino        1200413
+Se desconoce       1641
+Name: Total, dtype: int64
+
+Víctimas agrupadas por pocentajes según Sexo
+Sexo
+Masculino       52.0
+Femenino        48.0
+Se desconoce     0.0
+Name: Total, dtype: float64
+
+Víctimas agrupadas por Grupos de edad
+Grupo edad
+De 18 a 25 años       326268
+De 26 a 40 años       726870
+De 41 a 50 años       581731
+De 51 a 65 años       575894
+Edad desconocida        3895
+Mayores de 65 años    230754
+Menores de edad        45258
+Name: Total, dtype: int64
+
+Víctimas agrupadas por pocentajes según Grupos de edad
+Grupo edad
+De 18 a 25 años       13.0
+De 26 a 40 años       29.0
+De 41 a 50 años       23.0
+De 51 a 65 años       23.0
+Edad desconocida       0.0
+Mayores de 65 años     9.0
+Menores de edad        2.0
+Name: Total, dtype: float64
+
+Se ha generado los gráficos: ../png/h5_1.png
+Gráficos de Víctimas agrupadas por Sexo y Víctimas agrupadas por Grupo edad
+
+
+Se ha generado el gráfico: ../png/h5_2.png
+Tipología Delictiva comparada por Sexo de las víctimas según el Grupo Penal (2011–2025)
+
+
+La ejecución del script para el Análisis de la evolución de los ciberdelitos y situación de la cibercriminalidad ha finalizado.
