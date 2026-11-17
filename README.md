@@ -151,7 +151,14 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 * Del total de 54 tipologías penales, 7 de ellas presentan una evolucion decreciente.  
 
-
+> Reclasificación de nombres (2022–2023)
+> Debido a un cambio de nomenclatura y reformas legales en el registro estadístico.
+> ACCESO ILEGAL INFORMÁTICO registra datos de 2011 a 2022 y pasa a 0 a partir de 2023. 
+> Justo en 2023 aparece ACCESO ILEGAL A SISTEMAS INFORMÁTICOS (que estaba a 0 hasta 2022). 
+> Es exactamente el mismo delito renombrado en el sistema estadístico.
+> ATAQUES INFORMÁTICOS (2011–2022) pasa a llamarse ATAQUES A DATOS O PROGRAMAS INFORMÁTICOS y ATAQUES A SISTEMAS INFORMÁTICOS a partir de 2023.
+> ABUSO SEXUAL desaparece (pasa a 0) en 2023 tras la reforma del Código Penal (Ley del "solo sí es sí"), integrándose en AGRESIÓN SEXUAL.
+> ESTAFA BANCARIA cae a 0 en 2025 mientras repunta ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE.
 
 <hr>
 
