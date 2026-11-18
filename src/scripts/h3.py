@@ -36,36 +36,66 @@ def h3():
 
 
 
+    print("\n\nDebido a reformas legales, en el registro estadístico en 2022–2023 se realizó una reclasificación de los nombres de tipologías:")
+    print('- ACCESO ILEGAL INFORMÁTICO" registra datos de 2011 a 2022 y a partir de 2023 pasa a 0. En 2023 aparece "ACCESO ILEGAL A SISTEMAS INFORMÁTICOS" (que estaba a 0 hasta 2022). Es el mismo delito renombrado en el sistema estadístico.')
+    print('- ATAQUES INFORMÁTICOS", "ATAQUES A DATOS O PROGRAMAS INFORMÁTICOS" y "ATAQUES A SISTEMAS INFORMÁTICOS" a partir de 2023 pasa a llamarse "ATAQUES A DATOS Y SISTEMAS INFORMÁTICOS".')
+    print('-"ABUSO SEXUAL" pasa a 0 en 2023, "AGRESIÓN SEXUAL", "ABUSO SEXUAL CON PENETRACIÓN" y "AGRESIÓN SEXUAL CON PENETRACIÓN" tras la reforma del Código Penal (Ley del "solo sí es sí") se integran en "AGRESIÓN Y ABUSO SEXUAL".')
+    print('-"ESTAFA BANCARIA" y "ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE" se renombran a "ESTAFAS BANCARIAS Y CON TARJETAS/MEDIOS DE PAGO"\n')
+
+
+
+
+    # Partimos del dataframe filtrado a nivel nacional (excluyendo el total general)
+    df_limpio = df[
+        (df["Comunidades autónomas"] == "TOTAL NACIONAL") & 
+        (df["Tipología penal"] != "TOTAL tipo hecho")
+    ].copy()
+
+    # Diccionario de mapeo para unificar tipologías equivalentes o reclasificadas
+    mapeo_tipologias = {
+        # Accesos ilegales (renombrado en 2023)
+        "ACCESO ILEGAL INFORMÁTICO": "ACCESO ILEGAL A SISTEMAS INFORMÁTICOS",
+        
+        # Ataques informáticos (desglosados/renombrados en 2023)
+        "ATAQUES INFORMÁTICOS": "ATAQUES A DATOS Y SISTEMAS INFORMÁTICOS",
+        "ATAQUES A DATOS O PROGRAMAS INFORMÁTICOS": "ATAQUES A DATOS Y SISTEMAS INFORMÁTICOS",
+        "ATAQUES A SISTEMAS INFORMÁTICOS": "ATAQUES A DATOS Y SISTEMAS INFORMÁTICOS",
+        
+        # Reforma del Código Penal (unificación de abuso y agresión sexual en 2023)
+        "ABUSO SEXUAL": "AGRESIÓN Y ABUSO SEXUAL",
+        "AGRESIÓN SEXUAL": "AGRESIÓN Y ABUSO SEXUAL",
+        "ABUSO SEXUAL CON PENETRACIÓN": "AGRESIÓN Y ABUSO SEXUAL CON PENETRACIÓN",
+        "AGRESIÓN SEXUAL CON PENETRACIÓN": "AGRESIÓN Y ABUSO SEXUAL CON PENETRACIÓN",
+        
+        # Reclasificación de estafas bancarias y medios de pago en 2025
+        "ESTAFA BANCARIA": "ESTAFAS BANCARIAS Y CON TARJETAS/MEDIOS DE PAGO",
+        "ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE": "ESTAFAS BANCARIAS Y CON TARJETAS/MEDIOS DE PAGO"
+    }
+
+    # Aplicamos el reemplazo de tipologías con .replace()
+    df_limpio["Tipología penal"] = df_limpio["Tipología penal"].replace(mapeo_tipologias)
+
+
+
     # gráfico h3_1
+    ranking_unificado = df_limpio.groupby("Tipología penal")["Total"].sum().sort_values(ascending=False)
+    total_global = ranking_unificado.sum()
 
-    total_global = ranking_tipos.sum()
-
-    top10_plot = ranking_tipos.head(10).sort_values(ascending=True)
+    top10_plot = ranking_unificado.head(10).sort_values(ascending=True)
     porcentajes = (top10_plot / total_global) * 100
-
-    # Acortar o dividir etiquetas muy largas en 2 líneas (máx. 42 caracteres por línea) 
     etiquetas_limpias = [textwrap.fill(str(nombre), width=42) for nombre in top10_plot.index]
 
-    # Creación de la figura
     fig, ax = plt.subplots(figsize=(12, 7.5))
-
-    # Destacar la tipología líder en un azul más oscuro
     colores = ["#8ab4d8"] * (len(top10_plot) - 1) + ["#1f4e78"]
     bars = ax.barh(etiquetas_limpias, top10_plot.values, color=colores, height=0.68)
 
-    # Títulos y ejes
-    ax.set_title("Top 10 tipologías de ciberdelincuencia (Acumulado histórico desde 2011 hasta 2025)", fontsize=14, fontweight="bold", pad=15)
+    ax.set_title("Top 10 tipologías de ciberdelincuencia (Acumulado histórico 2011-2025)", fontsize=14, fontweight="bold", pad=15)
     ax.set_xlabel("Total de hechos conocidos", fontsize=11, labelpad=10)
-
-    # Formatear el eje X con separador de miles (punto)
     ax.xaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f"{int(x):,}".replace(",", ".")))
-
-    # Limpiar bordes superiores y derechos
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.grid(axis="x", linestyle="--", alpha=0.4)
 
-    # Añadir etiquetas con el número exacto y el porcentaje sobre el total nacional
     margen = top10_plot.max() * 0.015
     for bar, pct in zip(bars, porcentajes):
         valor = int(bar.get_width())
@@ -80,10 +110,9 @@ def h3():
             color="#333333"
         )
 
-    # Ampliar margen derecho para que la etiqueta de la barra superior no se corte
     ax.set_xlim(0, top10_plot.max() * 1.24)
-
     plt.tight_layout()
+
 
     plt.savefig(variables.h3_1png, dpi=300)
 
@@ -96,27 +125,13 @@ def h3():
 
     # Agrupación para identificar las más frecuentes
     # datos por Tipo de Hecho sumando todo el histórico
-    top_delitos = df_dataset3.groupby("Tipología penal")["Total"].sum().sort_values(ascending=False)
-    #print("\nRanking acumulado de la tipología penal más frecuente", top_delitos)
+    
+    df_tendencia_unificada = df_limpio.groupby(["periodo", "Tipología penal"])["Total"].sum().unstack(fill_value=0)
 
+    primer_anio = df_tendencia_unificada.index.min()
+    ultimo_anio = df_tendencia_unificada.index.max()
+    diferencia_absoluta = df_tendencia_unificada.loc[ultimo_anio] - df_tendencia_unificada.loc[primer_anio]
 
-
-    # Análisis de tendencias por año
-    # Agrupamos por Año y Tipo de Hecho a nivel nacional
-    df_tendencia = df_dataset3.groupby(["periodo", "Tipología penal"])["Total"].sum().unstack(fill_value=0)
-
-    # print(df_tendencia)
-
-    # tendencia 
-    primer_anio = df_tendencia.index.min()
-    #print(primer_anio)
-    ultimo_anio = df_tendencia.index.max()
-    #print(ultimo_anio)
-
-
-    diferencia_absoluta = df_tendencia.loc[ultimo_anio] - df_tendencia.loc[primer_anio]
-
-    # Clasificamos las tipologías según su evolución ascendente y descendente
     tipologias_crecientes = diferencia_absoluta[diferencia_absoluta > 0].sort_values(ascending=False).index.tolist()
     tipologias_decrecientes = diferencia_absoluta[diferencia_absoluta < 0].sort_values(ascending=True).index.tolist()
 
@@ -126,57 +141,47 @@ def h3():
     print("\nTipologías de ciberdelitos en aumento", tipologias_crecientes)
     print("\nTipologías de ciberdelitos que disminuyen:", tipologias_decrecientes)
 
+  
 
 
+    # Gráfica de mayor crecimiento
 
-    # Configuración visual
     sns.set_theme(style="whitegrid")
-    plt.rcParams["figure.figsize"] = (14, 7)
+
     plt.figure(figsize=(14, 7))
-    # Mostramos las 10 que más crecen 
-    top_crecientes = tipologias_crecientes[:10]
+    for delito in tipologias_crecientes[:10]:
+        plt.plot(df_tendencia_unificada.index, df_tendencia_unificada[delito], marker="o", linewidth=2.5, label=delito)
 
-    for delito in top_crecientes:
-        plt.plot(df_tendencia.index, df_tendencia[delito], marker="o", linewidth=2.5, label=delito)
-
-    # plt.title("Evolución de las tipologías de Ciberdelitos con mayor crecimiento (", + str(primer_anio), "-", + str(ultimo_anio), ")", fontsize=14, fontweight='bold')
-
-    plt.title(f"Evolución de las tipologías de Ciberdelitos con mayor crecimiento ({primer_anio}-{ultimo_anio})", fontsize=14, fontweight="bold")
+    plt.title(f"Evolución de las tipologías de los ciberdelitos con mayor crecimiento ({primer_anio}-{ultimo_anio})", fontsize=14, fontweight="bold")
     plt.xlabel("Año", fontsize=12)
     plt.ylabel("Casos Conocidos Anuales", fontsize=12)
-    plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
-    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title="Tipologías")
+    plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f"{int(x):,}".replace(",", ".")))
+    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left", title="Tipologías unificadas")
     plt.tight_layout()
+
+
     plt.savefig(variables.h3_2png, dpi=300)
 
     print("\nSe ha generado el gráfico:", variables.h3_2png )
     print("Evolución de las tipologías de Ciberdelitos con mayor crecimiento \n")
 
 
+
+
     #gráfico 3_3
 
     plt.figure(figsize=(14, 7))
+    for delito in tipologias_decrecientes[:10]:
+        plt.plot(df_tendencia_unificada.index, df_tendencia_unificada[delito], marker="o", linewidth=2.5, label=delito)
 
-    if len(tipologias_decrecientes) == 0:
-        print("No se encontraron tipologías con descenso neto entre el año inicial y final global.")
-        
-        diferencia_ultimo_anio = df_tendencia.iloc[-1] - df_tendencia.iloc[-2]
-        tipologias_decrecientes_ultimo = diferencia_ultimo_anio[diferencia_ultimo_anio < 0].sort_values().index.tolist()
-        
-        if tipologias_decrecientes_ultimo:
-            for delito in tipologias_decrecientes_ultimo[:10]:
-                plt.plot(df_tendencia.index, df_tendencia[delito], marker="o", linewidth=2.5, label=delito)
-            plt.title(f"Tipologías de Ciberdelitos que más disminuyeron en el último año ({df_tendencia.index[-2]}-{df_tendencia.index[-1]})", fontsize=14, fontweight="bold")
-    else:
-        for delito in tipologias_decrecientes[:10]:
-            plt.plot(df_tendencia.index, df_tendencia[delito], marker="o", linewidth=2.5, label=delito)
-        plt.title(f"Evolución de las Tipologías de Ciberdelitos que más disminuyeron ({primer_anio}-{ultimo_anio})", fontsize=14, fontweight="bold")
-
+    plt.title(f"Evolución de las tipologías de los ciberdelitos que disminuyeron ({primer_anio}-{ultimo_anio})", fontsize=14, fontweight="bold")
     plt.xlabel("Año", fontsize=12)
     plt.ylabel("Casos Conocidos Anuales", fontsize=12)
-    plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
-    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left", title="Tipologías")
+    plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f"{int(x):,}".replace(",", ".")))
+    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left", title="Tipologías unificadas")
     plt.tight_layout()
+
+
     plt.savefig(variables.h3_3png, dpi=300)
 
     print("\nSe ha generado el gráfico:", variables.h3_3png )
