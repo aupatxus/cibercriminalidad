@@ -148,6 +148,13 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 > * "ABUSO SEXUAL" pasa a 0 en 2023, "AGRESIÓN SEXUAL", "ABUSO SEXUAL CON PENETRACIÓN" y "AGRESIÓN SEXUAL CON PENETRACIÓN" tras la reforma del Código Penal (Ley del "solo sí es sí") se integran en "AGRESIÓN Y ABUSO SEXUAL".  
 > * "ESTAFA BANCARIA" y "ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE" se renombran a "ESTAFAS BANCARIAS Y CON TARJETAS/MEDIOS DE PAGO"
 >
+> 
+> El motivo por el que delitos físicos aparecen en el registro de cibercriminalidad es que el Ministerio del Interior define el concepto desde una perspectiva instrumental (el medio utilizado) y no únicamente como delitos puramente informáticos. Esto implica que la estadística incluye cualquier delito del Código Penal en el que las Tecnologías de la Información y la Comunicación (TIC) hayan sido el medio, el instrumento o el canal necesario para cometerlo o facilitarlo.
+> En la práctica policial y judicial, delitos graves contra la libertad sexual se registran en este listado cuando ocurren situaciones como las siguientes:
+> * Captación y engaño previo en redes (Grooming / Ciberembaucamiento): Un agresor contacta con la víctima a través de redes sociales, videojuegos o aplicaciones de citas. Tras ganarse su confianza o engañarla sobre su identidad, concierta un encuentro físico donde se produce la agresión o el abuso con sexual.
+> * Coacción o extorsión digital (Sextorsión): El autor obtiene imágenes íntimas de la víctima mediante internet o engaños y la amenaza con difundirlas masivamente en la red si no accede a mantener relaciones sexuales físicas.
+> * Agresiones a distancia o mediante terceros: Casos en los que el agresor obliga a la víctima por videollamada o chat (bajo amenazas graves) a realizarse actos sexuales a sí misma o a un tercero, o cuando se contrata/induce la agresión en directo por internet (live streaming).
+>
 
 <img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3.png">
 
