@@ -220,6 +220,17 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 
 
+# Conclusiones finales
+
+El 85% de los ciberdelitos quedan sin resolver, nuestra mejor defensa es la prevención.  
+
+* Explosión del fraude: Los ciberdelitos se multiplicaron por más de 13 desde 2011 hasta alcanzar los 488.426 casos en 2025. El fraude informático y las estafas con tarjeta dominan el panorama actual.  
+* Brecha de impunidad: Mientras las denuncias se disparan, la tasa nacional de esclarecimiento cayó del 36% al 15%. Las estafas masivas apenas se resuelven en un 12% y los ataques informáticos en un 6%.  
+* Todos somos objetivo: Casi la mitad de los delitos se concentran en Cataluña, Andalucía y Madrid. El perfil principal de la víctima es población activa entre 26 y 65 años, con una distribución casi igual entre hombres (52%) y mujeres (48%).  
+
+Si las denuncias crecen 13 veces más rápido que nuestra capacidad para resolverlas, ¿estamos preparándonos como sociedad para protegernos, o seguimos confiando a la suerte nuestra seguridad digital? 
+
+
 
 
 
