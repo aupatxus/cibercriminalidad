@@ -102,7 +102,13 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 
 ## Hipótesis en desarrollo y conclusiones previas
 
-> NOTA: En el caso de País Vasco y Cataluña debemos tener en cuenta que el reporte de policías autonómicas (Ertzaintza y Mossos d'Esquadra) se dió a partir de 2015, frente a los datos de FCSE (Policía Nacional y Guardia Civil) que disponemos desde 2011.  
+>
+> Fiabilidad de los datos (data reliability): En el caso de País Vasco y Cataluña debemos tener en cuenta que el reporte de policías autonómicas (Ertzaintza y Mossos d'Esquadra) se dió a partir de 2015, frente a los datos de FCSE (Policía Nacional y Guardia Civil) que disponemos desde 2011.
+>
+> SIN DENUNCIA NO HAY DELITO: En estadística criminal y análisis de datos policiales existe una brecha muy importante entre lo registrado y la realidad:
+> * Hechos conocidos: Son los delitos que llegan a conocimiento de la policía mediante denuncia o investigación, por lo que los datos conocidos que disponemos, solo reflejan una parte de la realidad.
+> * Cifra negra (datos no registrados): Son todos los hechos delictivos que ocurren, pero nunca se denuncian (por vergüenza, desconocimiento, importes pequeños en una estafa o desconfianza). En cibercriminalidad se estima que la cifra negra es muy alta.
+>   
 
 
 ### 1. Evolución temporal de la ciberdelincuencia por tipo de delito (por grupo penal)  
