@@ -139,17 +139,6 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 ### 3. El top 10 de la tipología penal (por tipo de hecho)  
 > ¿Qué ciberdelitos son los más frecuentes?
 
-<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3.png">
-
-* Dentro de los fraudes, destacan las estafas con tarjetas de crédito/débito (1.177.949 casos), otras estafas (1.060.872 casos) y estafa bancaria (400.067 casos).
-
-<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3_2.png">  
-
-* Del total de 54 tipologías penales, 45 de ellas presentan una evolucion creciente.  
-
-<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3_3.png">  
-
-* Del total de 54 tipologías penales, 7 de ellas presentan una evolucion decreciente.  
 
 > 
 > Debido a reformas legales, en el registro estadístico en 2022–2023 se realizó una reclasificación de los nombres de tipologías: 
@@ -158,6 +147,21 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 > * "ATAQUES INFORMÁTICOS", "ATAQUES A DATOS O PROGRAMAS INFORMÁTICOS" y "ATAQUES A SISTEMAS INFORMÁTICOS" a partir de 2023 pasa a llamarse "ATAQUES A DATOS Y SISTEMAS INFORMÁTICOS". 
 > * "ABUSO SEXUAL" pasa a 0 en 2023, "AGRESIÓN SEXUAL", "ABUSO SEXUAL CON PENETRACIÓN" y "AGRESIÓN SEXUAL CON PENETRACIÓN" tras la reforma del Código Penal (Ley del "solo sí es sí") se integran en "AGRESIÓN Y ABUSO SEXUAL".  
 > * "ESTAFA BANCARIA" y "ESTAFAS CON TARJETAS DE CRÉDITO, DÉBITO Y CHEQUES DE VIAJE" se renombran a "ESTAFAS BANCARIAS Y CON TARJETAS/MEDIOS DE PAGO"
+>
+
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3.png">
+
+* Dentro de los fraudes, destacan las estafas bancarias y con tarjetas/medios de pago (1.578.016 casos) y otras estafas (1.060.872 casos).
+
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3_2.png">  
+
+* Del total de tipologías penales, 43 de ellas presentan una evolucion creciente.  
+
+<img src="https://raw.githubusercontent.com/aupatxus/cibercriminalidad/refs/heads/main/src/utils/h3_3.png">  
+
+* Del total de tipologías penales, 4 de ellas presentan una evolucion decreciente.  
+
+
 
 <hr>
 
