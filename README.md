@@ -157,8 +157,8 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 > 
 > El motivo por el que delitos físicos aparecen en el registro de cibercriminalidad es que el Ministerio del Interior define el concepto desde una perspectiva instrumental (el medio utilizado) y no únicamente como delitos puramente informáticos. Esto implica que la estadística incluye cualquier delito del Código Penal en el que las Tecnologías de la Información y la Comunicación (TIC) hayan sido el medio, el instrumento o el canal necesario para cometerlo o facilitarlo.
 > En la práctica policial y judicial, delitos graves contra la libertad sexual se registran en este listado cuando ocurren situaciones como las siguientes:
-> * Captación y engaño previo en redes (Grooming / Ciberembaucamiento): Un agresor contacta con la víctima a través de redes sociales, videojuegos o aplicaciones de citas. Tras ganarse su confianza o engañarla sobre su identidad, concierta un encuentro físico donde se produce la agresión o el abuso con sexual.
-> * Coacción o extorsión digital (Sextorsión): El autor obtiene imágenes íntimas de la víctima mediante internet o engaños y la amenaza con difundirlas masivamente en la red si no accede a mantener relaciones sexuales físicas.
+> * Captación y engaño previo en redes (Grooming / Ciberembaucamiento): Un agresor contacta con la víctima a través de redes sociales, videojuegos o aplicaciones de citas. Tras ganarse su confianza o engañarla sobre su identidad, concierta un encuentro físico donde se produce la agresión o el abuso sexual.
+> * Coacción o extorsión digital (Sextorsión): El autor obtiene (o dice disponer de) imágenes íntimas de la víctima mediante engaños, y amenaza a la víctima con difundirlas masivamente en la red si no accede a mantener relaciones sexuales físicas.
 > * Agresiones a distancia o mediante terceros: Casos en los que el agresor obliga a la víctima por videollamada o chat (bajo amenazas graves) a realizarse actos sexuales a sí misma o a un tercero, o cuando se contrata/induce la agresión en directo por internet (live streaming).
 >
 
