@@ -2,7 +2,7 @@
 # Análisis de la evolución de los ciberdelitos y situación de la cibercriminalidad 
 
 
-El presente estudio analiza el estado de la cibercriminalidad durante el periodo 2011–2025, desde la evolución, tipología, eficacia policial en la resolución de ciberdelitos y el perfil sociodemográfico de las víctimas, a partir de los datos oficiales del Ministerio del Interior.
+El presente estudio analiza el estado de la cibercriminalidad durante el periodo 2011-2025, desde la evolución, tipología, eficacia policial en la resolución de ciberdelitos y el perfil sociodemográfico de las víctimas, a partir de los datos oficiales del Ministerio del Interior.
 
 
 Datos y estadísticas disponibles de criminalidad
@@ -205,7 +205,7 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 * Hay un contraste territorial: Las regiones que concentran el mayor volumen absoluto de denuncias en España son las que presentan menores porcentajes de resolución. Mientras territorios con menor volumen como Melilla (32%), Extremadura (25%) o Castilla-La Mancha (24%) superan holgadamente la media nacional, grandes núcleos urbanos como Madrid (13%), Cataluña (8%) y País Vasco (2%) se sitúan a la cola.  
    
       
-* Podemos interpretar que en comunidades con una densidad muy alta de denuncias digitales (como Madrid, con más de 500.000 hechos conocidos), el volumen masivo de estafas cotidianas satura la capacidad de investigación frente a regiones con menor carga de casos.
+* Podemos interpretar una saturación por volumen, ya que en comunidades con una densidad muy alta de denuncias digitales (como Madrid, con más de 500.000 hechos conocidos), el volumen masivo de los casos satura la capacidad de investigación y resolución frente a regiones con menor carga de casos.
 
 <hr>
 
