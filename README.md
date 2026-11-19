@@ -109,7 +109,10 @@ df = pd.read_csv("../data/archivo.csv", sep=";", thousands=".")
 > 
 > Consideraciones previas:
 >
-> * Fiabilidad de los datos (data reliability): En el caso de País Vasco y Cataluña debemos tener en cuenta que el reporte de policías autonómicas (Ertzaintza y Mossos d'Esquadra) se dió a partir de 2015, frente a los datos de FCSE (Policía Nacional y Guardia Civil) que disponemos desde 2011.
+> * Fiabilidad de los datos (data reliability) y anomalías estadísticas: En el caso de País Vasco y Cataluña debemos tener en cuenta que el reporte de los registros de policías autonómicas (Ertzaintza y Mossos d'Esquadra) se dió a partir de 2015, frente a los datos de FCSE (Policía Nacional y Guardia Civil) y de la Policía Foral de Navarra que disponemos desde 2011.
+>   * Durante los primeros cuatro años de la serie (2011–2014), los datos publicados para Cataluña y el País Vasco corresponden únicamente a las actuaciones residuales de las Fuerzas y Cuerpos de Seguridad del Estado (FCSE) y policías locales adheridas en esos territorios, dejando fuera la gran mayoría de denuncias tramitadas por las policías autonómicas.
+>   * La integración retroactiva de los datos de Ertzaintza y Mossos d'Esquadra a partir de 2015 modificó la serie histórica nacional, generando un salto artificial en el volumen total de delitos conocidos a partir de ese año (y haciendo que Cataluña pasara de repente a encabezar el volumen de casos).
+>   * La Ertzaintza aporta datos de hechos conocidos, detenciones e investigados (y de victimizaciones únicamente desde 2021), pero no proporciona información relativa a hechos esclarecidos al sistema estatal. Esto explica por qué en la gráfica de comunidades autónomas el País Vasco aparece con una tasa de esclarecimiento del 2%, ya que se suman todos los delitos conocidos por la Ertzaintza desde 2015, pero apenas constan  los pocos casos resueltos por las FCSE en territorio vasco.
 >
 > 
 > * SIN DENUNCIA NO HAY DELITO: En estadística criminal y análisis de datos policiales existe una brecha muy importante entre lo registrado y la realidad:
