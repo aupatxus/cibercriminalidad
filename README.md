@@ -1,6 +1,10 @@
 
 # Análisis de la evolución de los ciberdelitos y situación de la cibercriminalidad 
 
+
+El presente estudio analiza el estado de la cibercriminalidad durante el periodo 2011–2025, desde la evolución, tipología, eficacia policial en la resolución de ciberdelitos y el perfil sociodemográfico de las víctimas, a partir de los datos oficiales del Ministerio del Interior.
+
+
 Datos y estadísticas disponibles de criminalidad
 https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/
 
@@ -10,7 +14,7 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.ht
 ## Origen de los datos 
 ### PORTAL ESTADÍSTICO DE CRIMINALIDAD 
 
-    * Series anuales. Cibercriminalidad. Comunidades y Ciudades Autónomas
+   * Series anuales. Cibercriminalidad. Comunidades y Ciudades Autónomas
         * Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por grupo penal
         * Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por tipo hecho
         * Hechos esclarecidos de infracciones penales relacionadas con cibercriminalidad por grupo penal
@@ -22,7 +26,7 @@ https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/datos.ht
         * Victimizaciones de infracciones penales relacionadas con cibercriminalidad desglosado por tipo hecho
         * Victimizaciones de infracciones penales relacionadas con cibercriminalidad desglosado por nacionalidad 
     
-    * Series anuales. Cibercriminalidad. Provincias
+   * Series anuales. Cibercriminalidad. Provincias
         * Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por grupo penal
         * Hechos conocidos de infracciones penales relacionadas con cibercriminalidad por tipo hecho
         * Hechos esclarecidos de infracciones penales relacionadas con cibercriminalidad por grupo penal
