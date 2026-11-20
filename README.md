@@ -2,7 +2,7 @@
 # Análisis de la evolución de los ciberdelitos y situación de la cibercriminalidad 
 
 
-El presente estudio analiza el estado de la cibercriminalidad durante el periodo 2011-2025, desde la evolución, tipología, eficacia policial en la resolución de ciberdelitos y el perfil sociodemográfico de las víctimas, a partir de los datos oficiales del Ministerio del Interior.
+El presente estudio analiza el estado de la cibercriminalidad durante el periodo 2011-2025, desde la evolución, localización, tipología, eficacia policial en la resolución de ciberdelitos y el perfil sociodemográfico de las víctimas, a partir de los datos oficiales del Ministerio del Interior.
 
 
 * Datos y estadísticas disponibles de criminalidad
